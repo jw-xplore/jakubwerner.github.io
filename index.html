@@ -1,12 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>My Blog</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Blog - Heaven for bloggers</title>
 </head>
+
 <body>
-  <h1>Welcome to My Blog!</h1>
-  <p>This is my first post.</p>
+    <nav class="navigation">
+        <div class="nav-left">
+            <ul>
+                <li><a href="/">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Content-->
+
+    <div class="content">
+
+        <!--Work-->
+        <h1>Work experience</h1>
+
+        <div class="portfolio-section">
+            <h2>Dead Rift - Polysoup Interactive</h2>
+        </div>
+
+        <div class="portfolio-section">
+            <h2>Arma Reforger - Bohemia Interactive</h2>
+            <iframe class="video"
+                src="https://www.youtube.com/watch?v=OLUzmicMGw8">
+            </iframe>
+
+            <h3>Timeline</h3>
+            <div class="portfolio-section-blocks">
+                <div class="portfolio-section-block">
+                    <h3>2020</h3>
+                    <ul>
+                        <li>2D optics scripting used at vehicles and as alternative to PIP optics for better performance</li>
+                        <li>Scripted radial menu used for gamepad controls</li>
+                    </ul>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>2021</h3>
+                    <ul>
+                        <li>Server browser scripting - Allows searching servers and automatic download of required server mods</li>
+                        <li>Widget library and UI scripting</li>
+                    </ul>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>2022 (EA release)</h3>
+                    <ul>
+                        <li>Workshop advanced mod manager scripting - Allows easier handling of owned mods</li>
+                        <li>Improving and maintaining server browser and workshop towards and after EA release</li>
+                        <li>Scripted LAN hosting menu</li>
+                    </ul>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>2023 (1.0 release)</h3>
+                    <ul>
+                        <li>Download manager improvement of UX and stability</li>
+                        <li>Selection menu refactor for better modularity across team and modder community</li>
+                        <li>Overtaking responsibility over Game Master editor</li>
+                    </ul>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>2024</h3>
+                    <ul>
+                        <li>Game Master saves extension - Allows players share their saves over workshop</li>
+                        <li>Game Master maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Personal-->
+        <h1>Personal projects</h1>
+
+        <div class="portfolio-section">
+            <div class="portfolio-section-blocks">
+                <div class="portfolio-section-block">
+                    <h3>The Runner</h3>
+                    <p>December 2018</p>
+                    <iframe class="video"
+                        src="https://youtu.be/-Z8PYUOAX1M">
+                    </iframe>
+                    <p>
+                        In the trenches of the Great War, the player is trying to survive and deliver messages between outposts.
+                    </p>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>Ice tap</h3>
+                    <p>December 2020</p>
+                    <iframe class="video"
+                        src="https://youtube.com/shorts/2uifzf0my5w?feature=share">
+                    </iframe>
+                    <p>
+                        Mobile game playing around with ice juggling and breaking mechanics.    
+                    </p>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>Tunrise prototype</h3>
+                    <p>June 2025</p>
+                    <iframe class="video"
+                        src="https://youtu.be/F1oUMJgjQRY">
+                    </iframe>
+                    <p>
+                        Prototype for music educational game where players can practice scales and rhythm using real sound as input.    
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--School-->
+        <h1>University projects</h1>
+
+        <div class="portfolio-section">
+            <div class="portfolio-section-blocks">
+                <div class="portfolio-section-block">
+                    <h3>Pong - Metaphor excercise</h3>
+                    <p>March 2025</p>
+                    <iframe class="video"
+                        src="https://youtu.be/X60nj6sWRFI">
+                    </iframe>
+                    <p>
+                        Fun exercise with the goal to turn Pong into a new game without changing mechanics
+                    </p>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>Line Out</h3>
+                    <p>May 2025</p>
+                    <iframe class="video"
+                        src="https://drive.google.com/file/d/16ScFtV6tq_rWW9YgGEGFMkeZ2uXXDlQK/view?usp=sharing">
+                    </iframe>
+                    <p>
+                        Coop sledding game where players as pack of dogs deliver packages through dangerous arctic wilderness.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Jams-->
+        <h1>Game jams</h1>
+
+        <div class="portfolio-section">
+            <div class="portfolio-section-blocks">
+                <div class="portfolio-section-block">
+                    <h3>Fear of Contact</h3>
+                    <p>November 2021</p>
+                    <iframe class="video"
+                        src="https://youtu.be/9u3i_izISfY">
+                    </iframe>
+                    <p>
+                        Horror obstacle runner where the player meets unknown intelligence.   
+                    </p>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>Tale of Storm</h3>
+                    <p>June 2024</p>
+                    <p>
+                        Vampire Survivors inspired where the player fights against waves of power demons.
+                    </p>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <h3>Enlighten</h3>
+                    <p>January 2025</p>
+                    <p>
+                        Your bubble protects you from the darkness. Are you willing to step outside to bring the light back to the world?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Content END-->
+
+    <div class="footer">
+    </div>
 </body>
+
 </html>
