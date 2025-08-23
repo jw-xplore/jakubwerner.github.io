@@ -10,10 +10,18 @@
   --col-footer: #3f496a;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: var(--col-base-background);
   color: var(--col-base-text);
-  font-family: var(--font1);
+  background: linear-gradient(220deg, var(--col-base-background) 0%, rgba(0, 0, 0, 0.9) 100%);
+  font-family: "Montserrat",  Arial, sans-serif;;
 }
 
 .video{
@@ -23,7 +31,6 @@ body {
 
 .navigation {
   margin-top: 50px;
-  font-family: var(--font1);
   /* height: 74px;  */
   display: flex;
   justify-content: space-between;
@@ -46,14 +53,12 @@ body {
   display: flex;
   align-items: center;
   margin: 0 77px;
-  font-size: 22px;
   padding-bottom: 23px;
 }
 
 .nav-left ul li {
   list-style: none;
   margin: 0 14px;
-  font-family: var(--font2);
   transition: all 0.3s ease-in-out;
 }
 
@@ -67,22 +72,44 @@ body {
 }
 
 .content {
-  height: 100%;
-  margin: 80px 10vw;
+  width: 80%;
+  margin: 40px auto;
 }
 
 /*Porfolio sections*/
 .portfolio-section{
+  margin-bottom: 80px;
 }
 
 .portfolio-section-blocks{
+  margin-top: 40px;
   display: flex;
   align-items: start;
 }
 
+#timeline .portfolio-section-block{
+  padding: 20px;
+  background: linear-gradient(0deg,rgba(112, 83, 67, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+#timeline .portfolio-section-block h3{
+  font-size: 14px;
+}
+
+#timeline .portfolio-section-block ul{
+  margin-top: 20px;
+}
+
+#timeline .portfolio-section-block li{
+  font-size: 12px;
+  position: relative;
+  line-height: 18px;
+  left: 10px;
+}
+
 .portfolio-section-block{
   background: black;
-  width: 600px;
+  width: 100%;
   height: 300px;
   overflow: hidden;
   margin: 0px 4px;
@@ -104,6 +131,7 @@ body {
 
 .portfolio-section-block p{
   z-index: 1;
+  font-size: 14px;
 }
 
 .portfolio-section-block .video{
@@ -144,7 +172,6 @@ body {
 }
 
 .content-left {
-  font-family: var(--font1);
   display: flex;
   flex-direction: column;
   justify-content: center;

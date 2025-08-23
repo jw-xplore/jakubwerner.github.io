@@ -60,4 +60,31 @@
     justify-content: flex-end;
     width: 100%;
   }
+
+  /*Content*/
+  .content{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /*Portfolio blocks*/
+
+  .portfolio-section-blocks{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .portfolio-section-block{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  #timeline .portfolio-section-block{
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 4px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.3) 100%);
+  }
 }
