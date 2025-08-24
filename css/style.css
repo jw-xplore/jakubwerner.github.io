@@ -21,7 +21,8 @@ body {
   background-color: var(--col-base-background);
   color: var(--col-base-text);
   background: linear-gradient(220deg, var(--col-base-background) 0%, rgba(0, 0, 0, 0.9) 100%);
-  font-family: "Montserrat",  Arial, sans-serif;;
+  font-family: "Montserrat",  Arial, sans-serif;
+  font-size: 15px;
 }
 
 .video{
@@ -78,13 +79,23 @@ body {
 
 /*Porfolio sections*/
 .portfolio-section{
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .portfolio-section-blocks{
   margin-top: 40px;
   display: flex;
   align-items: start;
+}
+
+/*Contributions and timeline*/
+.contributions{
+  font-size: 14px;
+  margin: 8px 20px;
+}
+
+#timeline{
+  margin-top: 20px;
 }
 
 #timeline .portfolio-section-block{
@@ -107,6 +118,7 @@ body {
   left: 10px;
 }
 
+/*Portfolio block*/
 .portfolio-section-block{
   background: black;
   width: 100%;
