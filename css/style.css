@@ -5,9 +5,9 @@
 
 /*Variables*/
 :root {
-  --col-base-background: #202022;
+  --col-base-background: #141414;
   --col-base-text: #c8c8c8;
-  --col-footer: #3f496a;
+  --col-footer: #141414;
 }
 
 @font-face {
@@ -36,7 +36,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  border-bottom: var(--col-footer) 1px solid;
 }
 
 .nav-left {
@@ -73,13 +72,13 @@ body {
 }
 
 .content {
-  width: 80%;
-  margin: 40px auto;
+  margin: 0px auto;
 }
 
 /*Porfolio sections*/
 .portfolio-section{
-  margin-bottom: 60px;
+  padding: 40px 10%;
+  padding-bottom: 120px;
 }
 
 .portfolio-section-blocks{
@@ -165,6 +164,14 @@ body {
 
 .portfolio-section-block img{
   width: 100%;
+}
+
+.portfolio-section-block .gif{
+  width: auto;
+  height: 120%;
+  position: relative;
+  left: -20%;
+  top: -10%;
 }
 
 .portfolio-section-block .bottom-text{
@@ -253,4 +260,84 @@ body {
 
 .footer a {
   color: white;
+}
+
+/*Links*/
+.portfolio-section-block .links{
+  width: 66px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 0;
+  display: block;
+}
+
+.portfolio-section-block{
+  border: none;
+  transition: border 0.5s;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.portfolio-section-block:hover{
+  border: 2px solid #DACAA3;
+}
+
+.portfolio-section-block .links{
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.portfolio-section-block:hover .links{
+  opacity: 1;
+  transition: opacity 0.1s;
+}
+
+.portfolio-section-block .links .link-button{
+  position:sticky;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  z-index: 3;
+}
+
+.links #link-yt:hover{
+  background: #D93C36;
+}
+
+.links #link-itch:hover{
+  background: #F28397;
+}
+
+.links #link-ggj:hover{
+  background: #674ba9;
+}
+
+/*Sections coloring*/
+#section-ps{
+  /*background: rgba(25, 39, 55, 0.3);*/
+  background: linear-gradient(180deg,rgba(24, 43, 57, 0.2) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+#section-bi{
+  /*background: rgba(42, 60, 32, 0.3);*/
+  background: linear-gradient(180deg,rgba(42, 60, 32, 0.2) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+#section-personal{
+  background: linear-gradient(180deg,rgba(89, 68, 40, 0.2) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+#section-ltu{
+  /*background: rgba(22, 29, 55, 0.3);*/
+  background: linear-gradient(180deg,rgba(24, 34, 71, 0.2) 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+#section-jams{
+  /*background: rgb(99, 50, 54, 0.3);*/
+  background: linear-gradient(180deg,rgba(99, 50, 54, 0.2) 50%, rgba(0, 0, 0, 0.1) 100%);
 }

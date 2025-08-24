@@ -1,7 +1,6 @@
 @media screen and (max-width: 1200px) {
   .navigation {
     flex-direction: column;
-    margin-bottom: 23px;
   }
 
   .nav-left {
@@ -63,14 +62,19 @@
 
   /*Content*/
   .content{
-    width: 90%;
     margin: 0 auto;
+  }
+
+  .portfolio-section{
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   /*Portfolio blocks*/
 
   .portfolio-section-blocks{
     display: block;
+    margin: auto;
     margin-top: 20px;
   }
 
@@ -86,5 +90,16 @@
     padding-bottom: 20px;
     margin-bottom: 4px;
     background: linear-gradient(0deg,rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.3) 100%);
+  }
+
+  .portfolio-section-block .gif{
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: -1.8vw;
+  }
+
+  .portfolio-section-block .links{
+    opacity: 1;
   }
 }

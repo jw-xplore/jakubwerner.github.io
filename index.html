@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <title>Blog - Heaven for bloggers</title>
+    <title>Jakub Werner - Portfolio</title>
 </head>
 
 <body>
     <nav class="navigation">
+        <!--
         <div class="nav-left">
             <ul>
                 <li><a href="/">Portfolio</a></li>
@@ -19,6 +20,7 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </div>
+        -->
     </nav>
 
     <!--Content-->
@@ -26,16 +28,18 @@
     <div class="content">
 
         <!--Work-->
-        <h1>Work experience</h1>
         <br>
-        <div class="portfolio-section">
+        <div class="portfolio-section" id="section-ps">
+            <h1>Work experience</h1>
+            <br><br>
+
             <h2>Dead Rift - Polysoup Interactive</h2>
             <p>Gameplay design and scripting (2025/6 - 2025/8)</p>
             <p>Technology: Godot, C#</p>
 
             <br>
             <p>
-                I have joined Polysoup Interactive under Sammes Stiftelse summer scholarship to help them with prototyping their new game Dead Rift. Dead Rift is a co-op loot extraction game set inside an ancient structure buried deep under the sea. Our goal was to make a playable prototype starting with base technology and player character. Over summer we have managed to bring many features and tried out several gameplay variations. This process taught me how to iterate fast in a small team and discover fun elements of the game.
+                I have joined Polysoup Interactive thanks to Sammes Stiftelse summer scholarship to help with prototyping of their new game Dead Rift. Dead Rift is a co-op loot extraction game set inside an ancient structure buried deep under the sea. Our goal was to make a playable prototype, starting from functional player character and vertical slice. Over summer we have managed to bring many features and tried out several gameplay variations. This process taught me how to iterate fast in a small team and discover fun elements of the game.
             </p>
             <br>
             <h3>Contributions</h3>
@@ -47,10 +51,46 @@
                 <li>Simple shop and upgrading system</li>
                 <li>Player HUD</li>
             </ul>
+            
+            <!--DR images-->
+            <div class="portfolio-section-blocks">
+                
 
+                <div class="portfolio-section-block">
+                    <img src="gif/drloot.gif" class="gif">
+                    <div class="img-gradient" style="opacity: 0.7;"></div>
+                    <div class="text-content">
+                        <p class="bottom-text">
+                            Looting
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <img src="img/drprogress.png">
+                    <div class="img-gradient" style="opacity: 0.7;"></div>
+                    <div class="text-content">
+                        <p class="bottom-text">
+                            3 months progress
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-section-block">
+                    <img src="gif/drcombat.gif" class="gif">
+                    <div class="img-gradient" style="opacity: 0.7;"></div>
+                    <div class="text-content">
+                        <p class="bottom-text">
+                            Combat
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
 
-        <div class="portfolio-section">
+        <div class="portfolio-section" id="section-bi">
             <h2>Arma Reforger - Bohemia Interactive</h2>
             <p>Technical designer - Scripting and design (2020/8 - 2024/8)</p>
             <p>Technology: Enfusion Engine, Enforce Script</p>
@@ -107,7 +147,7 @@
         </div>
 
         <!--Personal-->
-        <div class="portfolio-section">
+        <div class="portfolio-section" id="section-personal">
             <h1>Personal projects</h1>
             <div class="portfolio-section-blocks">
                 
@@ -124,6 +164,11 @@
                             In the trenches of the Great War, the player is trying to survive and deliver messages between outposts.
                         </p>
                     </div>
+
+                    <div class="links">
+                        <a href="https://youtu.be/-Z8PYUOAX1M" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
+                        <a href="https://wandering-gamedev.itch.io/the-runner" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
+                    </div>
                 </div>
 
                 <div class="portfolio-section-block">
@@ -137,6 +182,11 @@
                             Solo project<br><br>
                             Mobile game playing around with ice juggling and breaking mechanics.
                         </p>
+                    </div>
+                        
+                    <div class="links">
+                        <a href="https://www.youtube.com/watch?v=2uifzf0my5w" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
+                        <a href="https://wandering-gamedev.itch.io/ice-tap" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
                     </div>
                 </div>
 
@@ -152,6 +202,11 @@
                             Prototype for music educational game where players can practice scales and rhythm using real sound as input.   
                         </p>
                     </div>
+
+                    <div class="links">
+                        <a href="https://www.youtube.com/watch?v=F1oUMJgjQRY" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
+                        <a href="https://wandering-gamedev.itch.io/tunrise" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
+                    </div>
                 </div>
 
 
@@ -159,7 +214,7 @@
         </div>
 
         <!--School-->
-        <div class="portfolio-section">
+        <div class="portfolio-section" id="section-ltu">
             <h1>University projects</h1>
             <div class="portfolio-section-blocks">
 
@@ -176,6 +231,10 @@
                             Fun exercise with the goal to turn Pong into a new game without changing mechanics. Used models comes from Kenney.
                         </p>
                     </div>
+
+                    <div class="links">
+                        <a href="https://youtu.be/X60nj6sWRFI" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
+                    </div>
                 </div>
 
                 <div class="portfolio-section-block">
@@ -190,6 +249,10 @@
                             Coop sledding game where players as pack of dogs deliver packages through dangerous arctic wilderness.
                         </p>
                     </div>
+
+                    <div class="links">
+                        <a href="https://drive.google.com/file/d/16ScFtV6tq_rWW9YgGEGFMkeZ2uXXDlQK/view?usp=sharing" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
+                    </div>
                 </div>
 
 
@@ -197,7 +260,7 @@
         </div>
 
         <!--Jams-->
-        <div class="portfolio-section">
+        <div class="portfolio-section" id="section-jams">
             <h1>Game jams</h1>
             <div class="portfolio-section-blocks">
 
@@ -207,12 +270,17 @@
                     <div class="img-gradient"></div>
                     <div class="text-content">
                         <h3>Fear of Contact</h3>
-                        <p>November 2021</p>
+                        <p>November 2021 (GDS Prague jam)</p>
                         <p class="bottom-text">
                             Technology: Unity, C#<br>
                             Contribution: Scripting<br><br>
                             Horror obstacle runner where the player meets unknown intelligence.
                         </p>
+                    </div>
+
+                    <div class="links">
+                        <a href="https://www.youtube.com/watch?v=9u3i_izISfY&list=PLD5egkUE7ZqA0BTeE1LjOVQfpQRUWX3EV&index=7" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
+                        <a href="https://wandering-gamedev.itch.io/fear-of-contact" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
                     </div>
                 </div>
 
@@ -221,12 +289,16 @@
                     <div class="img-gradient"></div>
                     <div class="text-content">
                         <h3>Tale of Storm</h3>
-                        <p>June 2024</p>
+                        <p>June 2024 (Trijam #273)</p>
                         <p class="bottom-text">
                             Technology: Godot, GDScript<br>
                             Contribution: Scripting, graphics<br><br>
                             Vampire Survivors inspired where the player fights against waves of power demons.
                         </p>
+                    </div>
+
+                    <div class="links">
+                        <a href="https://wandering-gamedev.itch.io/tale-of-storm" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
                     </div>
                 </div>
 
@@ -235,12 +307,16 @@
                     <div class="img-gradient"></div>
                     <div class="text-content">
                         <h3>Enlighten</h3>
-                        <p>January 2025</p>
+                        <p>January 2025 (Global Game Jam)</p>
                         <p class="bottom-text">
                             Technology: Godot, C#<br>
                             Contribution: Player scripting<br><br>
                             Your bubble protects you from the darkness. Are you willing to step outside to bring the light back to the world?
                         </p>
+                    </div>
+
+                    <div class="links">
+                        <a href="https://globalgamejam.org/games/2025/enlightened-1" target="_blank"><div class="link-button" id="link-ggj"><img src="img/icon_game.png"></div></a>
                     </div>
                 </div>
 
