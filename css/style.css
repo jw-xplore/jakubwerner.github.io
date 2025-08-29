@@ -293,7 +293,7 @@ body {
   transition: opacity 0.1s;
 }
 
-.portfolio-section-block .links .link-button{
+.links .link-button{
   position:sticky;
   width: 50px;
   height: 50px;
@@ -303,6 +303,23 @@ body {
   opacity: 0.7;
   margin-bottom: 10px;
   z-index: 3;
+  transition: background 0.2s;
+}
+
+#major-links{
+  display:inline-flex;
+  position:absolute;
+  right: 10%;
+}
+
+#major-links .link-button{
+  position:relative;
+  right: 0;
+  margin-left: 8px;
+}
+#major-links .link-button img{
+  position:absolute;
+  width: 50px;
 }
 
 .links #link-yt:hover{
@@ -315,6 +332,10 @@ body {
 
 .links #link-ggj:hover{
   background: #674ba9;
+}
+
+.links #link-steam:hover{
+  background: #2a475e	;
 }
 
 /*Sections coloring*/
