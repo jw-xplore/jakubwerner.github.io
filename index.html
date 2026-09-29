@@ -1,362 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <title>Jakub Werner - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Template</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navigation">
-        <!--
-        <div class="nav-left">
+  <main class="page">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-image media-box">
+        <img src="images/jw_photoDark.png">
+      </div>
+
+      <div class="hero-content">
+        <h1>Jakub Werner</h1>
+        <p>Game Developer & Programmer</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Worked On -->
+    <section class="worked-on">
+      <h2>Worked on</h2>
+
+      <!-- Paklyx -->
+      <div class="worked-grid">
+        <div class="worked-project">
+          <div class="worked-image media-box">
+            <img src="images/paklyx.png">
+            <div class="project-links">
+                <a class="button" href="https://store.steampowered.com/app/4199860/Paklyx/" target="_blank">Steam</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="worked-info">
+          <h3>Paklyx</h3>
+          <p class="timeline">Game scripting (2026/1 - 2026/5)</p>
+          <div class="contributions">
+            <strong>Contributions:</strong>
             <ul>
-                <li><a href="/">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+              <li>Menu and localization scripting</li>
+              <li>Puzzles scripting</li>
             </ul>
+          </div>
+
+          <p class="tech">Unity, C#</p>
         </div>
-        -->
-    </nav>
+      </div>
+      <!-- Paklyx END -->
 
-    <!--Content-->
-
-    <div class="content">
-
-        <!--Work-->
-        
-        <div class="portfolio-section" id="section-bi">
-            <h1>Work experience</h1>
-            <br><br>
-
-            <div class="links" id="major-links">
-                <a href="https://store.steampowered.com/app/1874880/Arma_Reforger" target="_blank"><div class="link-button" id="link-steam"><img src="img/icon_game.png"></div></a>
+      <!-- Arma -->
+      <div class="worked-grid">
+        <div class="worked-project">
+          <div class="worked-image media-box">
+            <img src="images/arma.jpg">
+            <div class="project-links">
+                <a class="button" href="https://store.steampowered.com/app/1874880/Arma_Reforger/" target="_blank">Steam</a>
             </div>
-
-            <h2>Arma Reforger - <a href="https://careers.bohemia.net/en">Bohemia Interactive</a></h2>
-            <p>Technical designer - Scripting and design (2020/8 - 2024/8)</p>
-            <p>Technology: Enfusion Engine, Enforce Script</p>
-
-            <br>
-            <p>
-                Working on Arma Reforger was my first serious job in the game industry. I have started while the game was in production and I have experienced it’s rise towards early access, full release and later on gaining popularity with incoming updates. I have been involved mostly with UI script and front-end scripting of tools related to multiplayer and modding like server browser and workshop. Thanks to me and my colleagues we were able to create tools for convenient mods consumption, which is more accessible than modding in previous titles, and is available across multiple major platforms. Besides maturing as a true developer I have gained better understanding and appreciation for the modding and modding community, which is an important part of the Arma franchise.
-            </p>
-            <br>
-            <h3>Timeline</h3>
-            <div class="portfolio-section-blocks" id="timeline">
-                <div class="portfolio-section-block">
-                    <h3>2020</h3>
-                    <ul>
-                        <li>2D optics scripting used at vehicles and as alternative to PIP optics for better performance</li>
-                        <li>Scripted radial menu used for gamepad controls</li>
-                    </ul>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <h3>2021</h3>
-                    <ul>
-                        <li>Server browser scripting - Allows searching servers and automatic download of required server mods</li>
-                        <li>Widget library and UI scripting</li>
-                    </ul>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <h3>2022 (EA release)</h3>
-                    <ul>
-                        <li>Workshop advanced mod manager scripting - Allows easier handling of owned mods</li>
-                        <li>Improving and maintaining server browser and workshop towards and after EA release</li>
-                        <li>Scripted LAN hosting menu</li>
-                    </ul>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <h3>2023 (1.0 release)</h3>
-                    <ul>
-                        <li>Download manager improvement of UX and stability</li>
-                        <li>Selection menu refactor for better modularity across team and modder community</li>
-                        <li>Overtaking responsibility over Game Master editor</li>
-                    </ul>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <h3>2024</h3>
-                    <ul>
-                        <li>Game Master saves extension - Allows players share their saves over workshop</li>
-                        <li>Game Master maintenance</li>
-                    </ul>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <div class="portfolio-section" id="section-ris">
-
-            <h2>Paklyx - <a href="https://rushedideastudio.com">Rushed Idea Studio</a></h2>
-            <p>Systems and game scripting (2026/1 - now)</p>
-            <p>Technology: Unity, C#</p>
-
-            <br>
-            <p>
-                Play as Paklyx, a curious keyhole in a world where button mechanisms have replaced keys. Plan the right move sequence, trigger buttons, and collect keys on the exact turn they appear. Progress through levels and uncover special button types that introduce new rules to master. 
-            </p>
-
-            <br>
-            <h3>Contributions</h3>
-            <ul class="contributions">
-                <li>Settings menu and localization system</li>
-                <li>Prototyping of new puzzles behavior</li>
+        <div class="worked-info">
+          <h3>Arma Reforger</h3>
+          <p class="timeline">Game scripting (2020/8 - 2024/8)</p>
+          <div class="contributions">
+            <strong>Contributions:</strong>
+            <ul>
+              <li>2024 - Game Master saves sharing</li>
+              <li>2023 - Download manager, Improving selection UI</li>
+              <li>2022 - Workshop expansion, LAN menu</li>
+              <li>2021 - Server browser, Widget library</li>
+              <li>2020 - Radial menu, 2D optics</li>
             </ul>
+          </div>
 
+          <p class="tech">Enfusion, Enforce Script</p>
+        </div>
+      </div>
+      <!-- Arma END-->
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <!-- Fika -->
+      <div class="worked-grid">
+        <div class="worked-project">
+          <div class="worked-image media-box">
+            <img src="images/fika.png">
+            <div class="project-links">
+                <a class="button" href="https://github.com/jw-xplore/FikaEngine" target="_blank">GitHub</a>
+                <a class="button" href="https://www.youtube.com/@FikaEngine" target="_blank">YouTube</a>
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio-section" id="section-ps">
-            
-            <div class="links" id="major-links">
-                <a href="https://drive.google.com/file/d/1cs7Lo_auVK7RtgmrLsWCf03cKRwLc3G6/view?usp=sharing" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
-            </div>
-
-            <h2>Dead Rift - <a href="https://polysoup.dev">Polysoup Interactive</a></h2>
-            <p>Gameplay design and scripting (2025/6 - 2025/8)</p>
-            <p>Technology: Godot, C#</p>
-
-            <br>
-            <p>
-                I have joined Polysoup Interactive over the summer to help with prototyping of their game Dead Rift. Dead Rift has been a co-op loot extraction game set inside an ancient structure buried deep under the sea.
-                The goal was to bring game from a vertical slice into playable prototype. 
-            </p>
-            <br>
-            <h3>Contributions</h3>
-            <ul class="contributions">
-                <li>Mechanical objects: Various obstacles, Trigger system</li>
-                <li>Player abilities: Oxygen, Inventory, Interactions</li>
-                <li>Enemies: Turret, Blowfish, Crowd behavior</li>
-                <li>Simple upgrading system</li>
+        <div class="worked-info">
+          <h3>Fika Engine</h3>
+          <p class="timeline">2026/4 - now</p>
+          <p>Experimental game engine created with goal to study and apply engines programming knowledge.</p>
+          <div class="contributions">
+            <strong>Contributions:</strong>
+            <ul>
+              <li>ECS & Entities management</li>
+              <li>Resources management and serialization</li>
+              <li>Simple OpenGL rendering</li>
+              <li>Basic shapes and line collisions</li>
+              <li>Level editor</li>
             </ul>
-            
-            <!--DR images-->
-            <div class="portfolio-section-blocks">
+          </div>
 
-                <div class="portfolio-section-block">
-                    <img src="gif/drloot.gif" class="gif">
-                    <div class="img-gradient" style="opacity: 0.7;"></div>
-                    <div class="text-content">
-                        <p class="bottom-text">
-                            Looting
-                        </p>
-                    </div>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <img src="img/drprogress.png">
-                    <div class="img-gradient" style="opacity: 0.7;"></div>
-                    <div class="text-content">
-                        <p class="bottom-text">
-                            3 months progress
-                        </p>
-                    </div>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <img src="gif/drcombat.gif" class="gif">
-                    <div class="img-gradient" style="opacity: 0.7;"></div>
-                    <div class="text-content">
-                        <p class="bottom-text">
-                            Combat
-                        </p>
-                    </div>
-                </div>
-
-
-            </div>
+          <p class="tech">Enfusion, Enforce Script</p>
         </div>
+      </div>
+      <!-- Fika END-->
 
-        <!--Personal-->
-        <div class="portfolio-section" id="section-personal">
-            <h1>Personal projects</h1>
-            <div class="portfolio-section-blocks">
-                
-
-                <div class="portfolio-section-block">
-                    <img src="img/runner.png">
-                    <div class="img-gradient"></div>
-                    <div class="text-content">
-                        <h3>The Runner</h3>
-                        <p>December 2018</p>
-                        <p class="bottom-text">
-                            Technology: Unity, C#<br>
-                            Solo project<br><br>
-                            In the trenches of the Great War, the player is trying to survive and deliver messages between outposts.
-                        </p>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://youtu.be/-Z8PYUOAX1M" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
-                        <a href="https://wandering-gamedev.itch.io/the-runner" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <img src="img/icetap.png">
-                    <div class="img-gradient"></div>
-                    <div class="text-content">
-                        <h3>Ice tap</h3>
-                        <p>December 2020</p>
-                        <p class="bottom-text">
-                            Technology: Unity, C#<br>
-                            Solo project<br><br>
-                            Mobile game playing around with ice juggling and breaking mechanics.
-                        </p>
-                    </div>
-                        
-                    <div class="links">
-                        <a href="https://www.youtube.com/watch?v=2uifzf0my5w" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
-                        <a href="https://wandering-gamedev.itch.io/ice-tap" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <img src="img/tunerise.png">
-                    <div class="img-gradient"></div>
-                    <div class="text-content">
-                        <h3>Tunrise prototype</h3>
-                        <p>June 2025</p>
-                        <p class="bottom-text">
-                            Technology: Godot, GDScript<br>
-                            Contribution: Scripting, graphics<br><br>
-                            Prototype for music educational game where players can practice scales and rhythm using real sound as input.   
-                        </p>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://www.youtube.com/watch?v=F1oUMJgjQRY" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
-                        <a href="https://wandering-gamedev.itch.io/tunrise" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
-                    </div>
-                </div>
-
-
+      <div class="projects-grid">
+        <!-- DeadRift -->
+        <article class="project-card">
+          <div class="project-image media-box">
+            <img src="images/deadrift.png">
+            <div class="project-links">
+                <a class="button" href="https://drive.google.com/file/d/1cs7Lo_auVK7RtgmrLsWCf03cKRwLc3G6/view" target="_blank">Video</a>
             </div>
-        </div>
+          </div>
 
-        <!--Jams-->
-        <div class="portfolio-section" id="section-jams">
-            <h1>Game jams</h1>
-            <div class="portfolio-section-blocks">
+          <h3>Dead Rift (2025/6 - 2025/8)</h3>
+          <p>Prototype for co-op loot extraction game set inside an ancient structure buried deep under the sea.</p>
+          <p class="contribution">Contribution: Gameplay prototyping</p>
+          <p class="tech">Godot, C#</p>
+        </article>
+        <!-- DeadRift END-->
 
-
-                <div class="portfolio-section-block">
-                    <img src="img/fearofcontact.png">
-                    <div class="img-gradient"></div>
-                    <div class="text-content">
-                        <h3>Fear of Contact</h3>
-                        <p>November 2021 (GDS Prague jam)</p>
-                        <p class="bottom-text">
-                            Technology: Unity, C#<br>
-                            Contribution: Scripting<br><br>
-                            Horror obstacle runner where the player meets unknown intelligence.
-                        </p>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://www.youtube.com/watch?v=9u3i_izISfY&list=PLD5egkUE7ZqA0BTeE1LjOVQfpQRUWX3EV&index=7" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
-                        <a href="https://wandering-gamedev.itch.io/fear-of-contact" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <img src="img/taleofstorm.png">
-                    <div class="img-gradient"></div>
-                    <div class="text-content">
-                        <h3>Tale of Storm</h3>
-                        <p>June 2024 (Trijam #273)</p>
-                        <p class="bottom-text">
-                            Technology: Godot, GDScript<br>
-                            Contribution: Scripting, graphics<br><br>
-                            Vampire Survivors inspired where the player fights against waves of power demons.
-                        </p>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://wandering-gamedev.itch.io/tale-of-storm" target="_blank"><div class="link-button" id="link-itch"><img src="img/icon_game.png"></div></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <img src="img/enlighten.png">
-                    <div class="img-gradient"></div>
-                    <div class="text-content">
-                        <h3>Enlighten</h3>
-                        <p>January 2025 (Global Game Jam)</p>
-                        <p class="bottom-text">
-                            Technology: Godot, C#<br>
-                            Contribution: Player scripting<br><br>
-                            Your bubble protects you from the darkness. Are you willing to step outside to bring the light back to the world?
-                        </p>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://globalgamejam.org/games/2025/enlightened-1" target="_blank"><div class="link-button" id="link-ggj"><img src="img/icon_game.png"></div></a>
-                    </div>
-                </div>
-
-                
+        <!-- TuneRise -->
+        <article class="project-card">
+          <div class="project-image media-box">
+            <img src="images/tunerise.png">
+            <div class="project-links">
+                <a class="button" href="https://github.com/jw-xplore/TunnerScalePrototype" target="_blank">GitHub</a>
+                <a class="button" href="https://wandering-gamedev.itch.io/tunrise" target="_blank">Itch</a>
             </div>
-        </div>
+          </div>
 
-        <!--School-->
-        <div class="portfolio-section" id="section-ltu">
-            <h1>University projects</h1>
-            <div class="portfolio-section-blocks">
+          <h3>Tunrise (2025/5)</h3>
+          <p>Music educational game prototype that helps practicing scales and rhythm. Game uses microphone to detect played notes.</p>
+          <p class="contribution">Solo project</p>
+          <p class="tech">Godot, GDScript</p>
+        </article>
+        <!-- TuneRise END-->
+      </div>
+    </section>
 
+    <div class="divider"></div>
 
-                <div class="portfolio-section-block">
-                    <img src="img/pong.png">
-                    <div class="img-gradient"></div>
-                    <div class="text-content">
-                        <h3>Pong - Metaphor excercise</h3>
-                        <p>March 2025</p>
-                        <p class="bottom-text">
-                            Technology: Godot, C#<br>
-                            Solo project<br><br>
-                            Fun exercise with the goal to turn Pong into a new game without changing mechanics. Used models comes from Kenney.
-                        </p>
-                    </div>
+    <!-- Game Jams -->
+    <section class="game-jams">
+      <h2>Game Jams</h2>
 
-                    <div class="links">
-                        <a href="https://youtu.be/X60nj6sWRFI" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-section-block">
-                    <img src="img/lineout.png">
-                    <div class="img-gradient"></div>
-                    <div class="text-content">
-                        <h3>Line Out</h3>
-                        <p>May 2025</p>
-                        <p class="bottom-text">
-                            Technology: Godot, C#<br>
-                            Contribution: Scripting, UI design<br><br>
-                            Coop sledding game where players as pack of dogs deliver packages through dangerous arctic wilderness.
-                        </p>
-                    </div>
-
-                    <div class="links">
-                        <a href="https://drive.google.com/file/d/16ScFtV6tq_rWW9YgGEGFMkeZ2uXXDlQK/view?usp=sharing" target="_blank"><div class="link-button" id="link-yt"><img src="img/icon_video.png"></div></a>
-                    </div>
-                </div>
-
-
+      <div class="game-jams-grid">
+        <article class="game-jam">
+          <div class="game-jam-image media-box">
+            <img src="images/ph.png">
+            <div class="project-links">
+                <a class="button" href="https://globalgamejam.org/games/2025/enlightened-1" target="_blank">GGJ</a>
             </div>
-        </div>
+          </div>
+          <h3>Enlighten (2025)</h3>
+        </article>
 
-    </div>
+        <article class="game-jam">
+          <div class="game-jam-image media-box">
+            <img src="images/taleofstorm.png">
+            <div class="project-links">
+                <a class="button" href="https://wandering-gamedev.itch.io/tale-of-storm" target="_blank">Itch</a>
+            </div>
+          </div>
+          <h3>Tale of Storm (2024)</h3>
+        </article>
 
-    <!--Content END-->
+        <article class="game-jam">
+          <div class="game-jam-image media-box">
+            <img src="images/fearofcontact.png">
+            <div class="project-links">
+                <a class="button" href="https://wandering-gamedev.itch.io/fear-of-contact" target="_blank">Itch</a>
+            </div>
+          </div>
+          <h3>Fear of Contact (2021)</h3>
+        </article>
+      </div>
+    </section>
 
-    <div class="footer">
-    </div>
+  </main>
 </body>
-
 </html>
