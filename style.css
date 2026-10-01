@@ -34,7 +34,6 @@ body {
     line-height: 1.45;
     margin: 0;
     text-shadow: 1px 2px 2px rgb(13, 13, 13);
-    box-shadow: 1px 4px 2px rgb(13, 13, 13);
 }
 
 img {
@@ -104,6 +103,7 @@ p {
     background: var(--card);
     border: 2px solid var(--border);
     border-radius: 13px;
+    box-shadow: 1px 2px 2px rgb(13, 13, 13);
 }
 
 .placeholder {
@@ -167,6 +167,11 @@ p {
 .hero-content p {
     color: var(--muted);
     font-size: 20px;
+}
+
+.read-more
+{
+    text-decoration: underline;
 }
 
 /* Worked on */
@@ -236,7 +241,7 @@ p {
 }
 
 .button:hover {
-    background: #0c0c0c;
+    background: #121212;
     transform: translateY(-1px);
 }
 
@@ -286,6 +291,97 @@ p {
     margin-left: 16px;
     margin-bottom: 0;
     font-size: 20px;
+}
+
+
+.details-page
+{
+    margin: 80px 160px;
+    margin-top: 50px;
+}
+
+.details-back
+{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 60px;
+    top: 58px;
+}
+
+.details-back p
+{
+    font-size: 38px;
+    margin-top: -22px;
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.details-back p:hover
+{
+    color: #858585;
+}
+
+.details-title a
+{
+    
+}
+
+.details-title #ris-link {
+    color: #F4EDDC;
+}
+
+.details-title #bi-link {
+    color: #e2a750;
+}
+
+.details-images
+{
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 16px;
+    max-width: 1280px;
+}
+
+.details-images .media-box
+{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.clearBoth {
+    clear:both;
+    margin-bottom: 100px;
+}
+
+.details-content
+{
+    margin-top: 40px;
+}
+
+.details-content p
+{
+    font-size: 16px;
+}
+
+.details-content p b
+{
+    font-weight: 1000;
+}
+
+.details-content ul
+{
+    margin-left: 20px;
+}
+
+.details-page .project-links
+{
+    top: -14px;
+}
+
+.timeline-img
+{
+    margin-top: 80px;
 }
 
 /* Mobile layout */
@@ -434,4 +530,37 @@ p {
     margin-left: 20px;
     font-size: 2rem;
     }
+
+    .details-page
+    {
+        margin: 80px 2%;
+    }
+
+    .details-back
+    {
+        left: 30px;
+        top: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .details-title
+    {
+        text-align: center;
+    }
+
+    .details-images
+    {
+        margin: 0 auto;
+        margin-top: 40px;
+        display: block;
+        gap: 16px;
+    }
+
+    .details-images .media-box
+    {
+        margin-bottom: 20px;
+    }
+
 }
