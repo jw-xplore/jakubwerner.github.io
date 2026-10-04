@@ -457,7 +457,7 @@ p {
     h2 {
     text-align: center;
     margin-bottom: 42px;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     }
 
     /* Mobile worked section */
@@ -478,8 +478,12 @@ p {
     padding: 0 20px;
     }
 
+    h3 {
+        font-size: 1.4rem;
+    }
+
     .worked-info h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 18px;
     }
 
