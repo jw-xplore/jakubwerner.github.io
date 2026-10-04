@@ -478,12 +478,21 @@ p {
     padding: 0 20px;
     }
 
-    h3 {
-        font-size: 1.4rem;
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
     }
 
     .worked-info h3 {
-    font-size: 1.6rem;
+
+    margin-bottom: 18px;
+    }
+
+    .project-card h3 {
+    font-size: 1.4rem;
     margin-bottom: 18px;
     }
 
@@ -531,13 +540,8 @@ p {
     margin-bottom: 25px;
     }
 
-    .project-card h3 {
-    font-size: 2rem;
-    margin-bottom: 18px;
-    }
-
     .project-card p {
-    font-size: 1.15rem;
+    font-size: 1.0rem;
     }
 
     /* Mobile game jams */
@@ -553,12 +557,12 @@ p {
 
     .game-jam h3 {
     margin-left: 20px;
-    font-size: 2rem;
+    font-size: 1.0rem;
     }
 
     .details-page
     {
-        margin: 80px 2%;
+        margin: 40px 2%;
     }
 
     .details-back
@@ -566,6 +570,10 @@ p {
         left: 0px;
         top: -34px;
         margin-bottom: 0px;
+    }
+
+    .details-page h1 {
+        font-size: 1.4rem;
     }
 }
 
@@ -589,4 +597,8 @@ p {
         margin-bottom: 20px;
     }
 
+    .details-padding
+    {
+        height: 100px;
+    }
 }
