@@ -232,6 +232,10 @@ p {
     float: right;
 }
 
+.more-projects .project-links {
+
+}
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -395,8 +399,16 @@ p {
     }
 
     section {
-    padding: 55px 0 65px;
+    padding: 55px 0 20px;
     border-top-width: 3px;
+    }
+
+    .projects-grid {
+        margin-bottom: 60px;
+    }
+
+    .game-jams {
+        margin-bottom: 60px;
     }
 
     /* Mobile hero */
@@ -454,6 +466,7 @@ p {
     flex-direction: column;
     gap: 25px;
     align-items: stretch;
+    margin-bottom: 60px;
     }
 
     .worked-image {
@@ -489,6 +502,10 @@ p {
     margin-top: -2px;
     padding: 0 0px;
     position: relative;
+    }
+
+    .more-projects .project-links {
+        margin-top: 44px;
     }
 
     .button {
