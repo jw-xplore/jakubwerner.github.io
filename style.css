@@ -1,20 +1,18 @@
 
 :root {
-    --background: #191a4b;
+    --background: #181818;
     --card: #f7f7f7;
     --text: #f5f5f5;
     --muted: #d6d6d6;
-    --border: #BCBCBC;
-    --gold-highlight: #efdc9d;
-    --gold-dark: #b7ac87;
+    --border: #858585;
     --button: #202020;
-    --max-width: 1920px;
-    --link-highlight: #d7d7d7;
+    --max-width: 1900px;
+    --link-highlight: #f7f7f7;
 }
 
 @font-face {
-  font-family: "Rosarivo";
-  src: url("fonts/Rosarivo/Rosarivo-Regular.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +31,7 @@ body {
     background: var(--background);
     background-image: url("images/background4.png");
     color: var(--text);
-    font-family: "Rosarivo",  Arial, sans-serif;
+    font-family: "Montserrat",  Arial, sans-serif;
     line-height: 1.45;
     margin: 0;
     text-shadow: 1px 2px 2px rgb(13, 13, 13);
@@ -65,8 +63,8 @@ section {
 
 .divider {
     width: 100%;
-    height: 1px;
-    background-image: linear-gradient(to right, var(--background), var(--gold-dark) 10%, var(--gold-dark) 90%, var(--background));
+    height: 3px;
+    background-image: linear-gradient(to right, var(--background), var(--border) 10%, var(--border) 90%, var(--background));
     margin: 0 auto;
 }
 
@@ -105,12 +103,9 @@ p {
 .media-box {
     overflow: hidden;
     background: var(--card);
-    /*border-image: linear-gradient(to top, var(--gold-dark) 0%, rgb(198, 198, 130) 100%) 1;*/
-    border-color: #737ce7;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 0px;
-    box-shadow: 1px 2px 20px rgb(13, 13, 13);
+    border: 2px solid var(--border);
+    border-radius: 13px;
+    box-shadow: 1px 2px 2px rgb(13, 13, 13);
 }
 
 .placeholder {
@@ -126,36 +121,12 @@ p {
     gap: 0px;
     border-top: 0;
     padding: 0px;
-    height: 140px;
-}
-
-.skills {
-    position: relative;
-    top: 10px;
-    padding-left: 40px;
-}
-
-.skills .skillElement {
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin-right: 8px;
-}
-
-.skills .skillElement p {
-    font-size: 10px;
-    text-align: center;
-}
-
-.banner {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    max-height: 160px;
 }
 
 .hero-image {
     width: 500px;
+    overflow: hidden;
+    max-height: 240px;
 }
 
 .image-fade
@@ -178,10 +149,8 @@ p {
 .hero-content
 {
     position: relative;
-    top: 12px;
-    left: 60px;
+    margin-left: 160px;
     z-index: 10;
-    width: 500px;
 }
 
 .hero-content h1 {
@@ -191,7 +160,7 @@ p {
 .hero-content h2 {
     color: var(--muted);
     /*font-size: clamp(1.5rem, 2.5vw, 2.8rem);*/
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     margin-top: 8px;
     margin-bottom: 16px;
@@ -258,16 +227,9 @@ p {
 
 .project-links {
     position: relative;
+    top: -56px;
     right: 10px;
     float: right;
-}
-
-.more-projects-wrap {
-    position: relative;
-    width: 100%;
-    height: 80px;
-    background: #161626;
-    border-top: 3px solid #2f2f49;
 }
 
 .more-projects .project-links {
@@ -275,7 +237,6 @@ p {
     margin-top: -8px;
     margin-right: 50px;
     z-index: 10;
-    top: 22px;
 }
 
 .button {
@@ -283,50 +244,24 @@ p {
     align-items: center;
     justify-content: center;
     /*min-width: 160px;*/
-    padding: 8px 12px;
+    min-height: 48px;
+    padding: 8px 24px;
     border: 2px solid var(--border);
-    border-radius: 2px;
-    /*background: #1e1e57;*/
+    border-radius: 10px;
+    background: var(--button);
     color: var(--link-highlight);
     font-size: 1.2rem;
-    font-weight: 1000;
-    transition: 0.5s ease, transform 0.4s ease;
-    overflow: visible;
-    background: #1510233c;
-}
-
-.button .linkIcon {
-    height: 20px;
-    margin-right: 6px;
-    transition: 0.5s ease, transform 0.4s ease;
-}
-
-.button .deco {
-    position:relative;
-    left: 4px;
-    width: 8px;
-    height: 8px;
-    /*height: 8px;*/
-    transition: 0.5s ease, transform 0.4s ease;
-    margin: auto;
+    font-weight: 700;
+    transition: background 0.4s ease, transform 0.4s ease;
 }
 
 #cvbtn{
-    padding: 8px 8px;
+    width: 50px;
 }
 
 .button:hover {
-    background: #15102389;
-    border-color: var(--gold-highlight);
-    color: var(--gold-highlight);
-}
-
-.button:hover .linkIcon {
-    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(0deg);
-}
-
-.button:hover .deco {
-    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(0deg);
+    background: #121212;
+    transform: translateY(-1px);
 }
 
 /* Projects */
@@ -467,12 +402,7 @@ p {
 /* Mobile layout */
 @media (max-width: 850px) {
     .page {
-    padding: 0 0px;
-    width: 100%;
-    }
-
-    .page-content {
-        padding: 0 32px;
+    padding: 0 32px;
     }
 
     section {
@@ -498,7 +428,6 @@ p {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
-    width: 100%;
     }
 
     .hero-image {
@@ -521,7 +450,6 @@ p {
     .hero-content
     {
         margin-left: 0px;
-        left: 0px;
     }
 
     .hero-content h1 {
@@ -591,7 +519,7 @@ p {
     .project-links {
     justify-content: flex-start;
     gap: 12px;
-    margin-top: 10px;
+    margin-top: -2px;
     padding: 0 0px;
     position: relative;
     }
@@ -604,14 +532,12 @@ p {
     .more-projects .project-links {
         margin: 0 auto;
         width: 100%;
-        margin-top: -8px;
+        margin-top: 44px;
         text-align: center;
     }
 
     .more-projects .project-links .button {
         margin: 0 auto;
-        font-size: 0.8rem;
-        padding: 8px 4px;
     }
 
     .button {

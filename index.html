@@ -12,27 +12,27 @@
 
     <!-- Hero -->
     <section class="hero">
-      <img class="banner" src="images/landscapeBanner.jpg">
+      <div class="hero-image">
+        <div class="image-fade"></div>
+        <img src="images/photo.jpg">
+      </div>
+
       <div class="hero-content">
         <h1>Jakub Werner</h1>
         <h2>Game Developer & Programmer</h2>
       </div>
     </section>
 
-    <div class="more-projects-wrap">
     <div class="more-projects">
       <div class="project-links">
-          <a class="button" id="cvbtn" href="CV_Werner.pdf" target="_blank"><div class="linkIcon"></div>CV<img class="deco" src="images/btnDeco.png"></a>
-          <a class="button" href="https://wandering-gamedev.itch.io" target="_blank"><img class="linkIcon" src="images/Itch.png">Itch<img class="deco" src="images/btnDeco.png"></a>
-          <a class="button" href="https://github.com/jw-xplore/FikaEngine" target="_blank"><img class="linkIcon" src="images/github.png">GitHub<img class="deco" src="images/btnDeco.png"></a>
-          <a class="button" href="https://www.youtube.com/@jakubwerner6623" target="_blank"><img class="linkIcon" src="images/Youtube.png">YouTube<img class="deco" src="images/btnDeco.png"></a>
+          <a class="button" id="cvbtn" href="CV_Werner.pdf" target="_blank">CV</a>
+          <a class="button" href="https://wandering-gamedev.itch.io" target="_blank">Itch</a>
+          <a class="button" href="https://github.com/jw-xplore/FikaEngine" target="_blank">GitHub</a>
+          <a class="button" href="https://www.youtube.com/@jakubwerner6623" target="_blank">YouTube</a>
       </div>
-    </div>
     </div>
 
     <div class="divider"></div>
-
-    <div class="page-content">
 
     <!-- Worked On -->
     <section class="worked-on">
@@ -43,16 +43,16 @@
         <article class="project-card">
           <div class="project-image media-box">
             <img src="images/paklyx.png">
+            <div class="project-links">
+                <a class="button" href="https://store.steampowered.com/app/4199860/Paklyx/" target="_blank">Steam</a>
+            </div>
           </div>
 
           <h3>Paklyx (2026/1 - 2026/5)</h3>
-          <p>Turn-based puzzle game about finding the correct sequence of moves set in a world where button mechanisms have replaced keys.</p>
+          <p>Turn-based puzzle game about finding the correct sequence of moves.</p>
           <p class="contribution">Contributions: Menu and localization scripting, Puzzles scripting</p>
           <p class="tech">Unity, C#</p>
-          <div class="project-links">
-            <a class="button" href="https://store.steampowered.com/app/4199860/Paklyx/" target="_blank"><img class="linkIcon" src="images/SteamIcon.png">Steam<img class="deco" src="images/btnDeco.png"></a>
-            <a class="button" href="pages/paklyx.html"><div class="linkIcon"></div>More...<img class="deco" src="images/btnDeco.png"></a>
-          </div>
+          <a href="pages/paklyx.html" class="read-more">Read more...</a>
         </article>
         <!-- Paklyx END-->
 
@@ -80,6 +80,9 @@
         <div class="worked-project">
           <div class="worked-image media-box">
             <img src="images/arma.jpg">
+            <div class="project-links">
+                <a class="button" href="https://store.steampowered.com/app/1874880/Arma_Reforger/" target="_blank">Steam</a>
+            </div>
           </div>
         </div>
 
@@ -98,11 +101,7 @@
           </div>
 
           <p class="tech">Enfusion, Enforce Script</p>
-          <div class="project-links">
-            <a class="button" href="https://store.steampowered.com/app/1874880/Arma_Reforger/" target="_blank"><img class="linkIcon" src="images/SteamIcon.png">Steam<img class="deco" src="images/btnDeco.png"></a>
-            <a class="button" href="pages/arma.html"><div class="linkIcon"></div>More...<img class="deco" src="images/btnDeco.png"></a>
-          </div>
-  
+          <a href="pages/arma.html" class="read-more">Read more...</a>
         </div>
       </div>
       <!-- Arma END-->
@@ -119,6 +118,10 @@
         <div class="worked-project">
           <div class="worked-image media-box">
             <img src="images/fika.png">
+            <div class="project-links">
+                <a class="button" href="https://github.com/jw-xplore/FikaEngine" target="_blank">GitHub</a>
+                <a class="button" href="https://www.youtube.com/@FikaEngine" target="_blank">YouTube</a>
+            </div>
           </div>
         </div>
 
@@ -138,13 +141,7 @@
           </div>
 
           <p class="tech">C++, OpenGL</p>
-
-          <div class="project-links">
-            <a class="button" href="https://github.com/jw-xplore/FikaEngine" target="_blank"><img class="linkIcon" src="images/github.png">GitHub<img class="deco" src="images/btnDeco.png"></a>
-            <a class="button" href="https://www.youtube.com/@FikaEngine" target="_blank"><img class="linkIcon" src="images/Youtube.png">YouTube<img class="deco" src="images/btnDeco.png"></a>
-            <a class="button" href="pages/fika.html"><div class="linkIcon"></div>More...<img class="deco" src="images/btnDeco.png"></a>
-          </div>
-
+          <a href="pages/fika.html" class="read-more">Read more...</a>
         </div>
       </div>
       <!-- Fika END-->
@@ -223,8 +220,6 @@
         </article>
       </div>
     </section>
-
-    </div> <!-- Page-content end -->
 
   </main>
 </body>
