@@ -14,13 +14,11 @@
 
   <div class="details-page">
     <h1 class="details-title">Fika Engine</a></h1>
-    <div class="details-images">
-        <div class="media-box"><img src="../images/fikaCollisions.png"></div>
-        <div class="media-box"><img src="../images/fikaEditor.png"></div>
-        <div class="media-box"><img src="../images/fikaBoxes.jpg"></div>
-        <br class="clearBoth" />
-    </div>
-
+    
+    <iframe class="details-video"
+    referrerpolicy="strict-origin-when-cross-origin"
+    src="https://www.youtube.com/embed/O-9P00dF8v8?si=JBkV9n_bfP6xmEGN">
+    </iframe>
 
     <div class="divider"></div>
 
@@ -31,35 +29,149 @@
             <a class="button" href="https://www.youtube.com/@FikaEngine" target="_blank"><img class="linkIcon" src="../images/Youtube.png">YouTube</a>
         </div>
         <div class="details-padding"></div>
+        
         <p>2026/4 - now</p>
         <br>
 
         <p>
-          Fika Engine is a small <b>3D C++ experimental game engine</b> which I'm using to test and implement various features used in game development.
-          <b>The goal is to create a minimal generic engine</b> within the scope of a single person, or small team, which would be <b>suitable for small game jam creations</b>. 
-          Alongside I also share my progress and knowledge on the Fika Engine YouTube channel.
+          Fika Engine is a <b>C++ experimental game engine</b> developed for study of various game engine features.
+          <b>The goal is to create a minimal generic engine</b> within the scope of a single person, or small team, which would be <b>suitable and efficient for small games</b>.
         </p>
 
-        <p>
-          The engine is currently a framework in its early stage but it has already got several standard features that can be used for creating simple games.
-
-          Engine provides:
-        </p>
+        <br>
+        <h4>Features</h4>
+        <br>
 
         <ul>
-        <li>Game loop and entity manager based on ECS architecture</li>
-        <li>Allocators and basic tools for memory management</li>
-        <li>Simple OpenGL rendering</li>
+        <li>Game loop & ECS based entity management</li>
+        <li>Pool allocator & basic memory management tools</li>
         <li>Collision detection for Spheres, AABB, Capsules and Lines</li>
-        <li>Various graphics resources managenet</li>
-        <li>Entities and components serialization</li>
-        <li>Simple level editor</li>
-        <li>Inputs handing</li>
-        <li>Basic project setup tools</li>
+        <li>Mouse-Keyboard & Gamepad input handling</li>
+        <li>Basic OpenGL rendering</li>
+        <li>Basic level editor</li>
         </ul>
 
+        <br>
+        <h4>Systems</h4>
+        <br>
+
+        <ul>
+
+        <li> ECS:
+          <a href="https://github.com/jw-xplore/FikaEngine/tree/main/engine/src/core/ecs">ECS Folder</a>
+        </li>
+        <li> Physics:
+          <a href="https://github.com/jw-xplore/FikaEngine/tree/main/engine/src/physics">Physics Folder</a>
+        </li>
+        <li> Memory Management:
+          <a href="https://github.com/jw-xplore/FikaEngine/blob/main/engine/src/core/pool_allocator.h">Pool Allocator</a>
+        </li>
+        <li> Camera:
+          <a href="https://github.com/jw-xplore/FikaEngine/tree/main/engine/src/renderer/camera">Camera Folder</a>
+        </li>
+        <li>Game Resources: 
+          <a href="https://github.com/jw-xplore/FikaEngine/blob/main/engine/src/core/game_resource_manager.h">Header</a> &
+          <a href="https://github.com/jw-xplore/FikaEngine/blob/main/engine/src/core/game_resource_manager.cpp">Source</a>
+        </li>
+        <li> Level Editor:
+          <a href="https://github.com/jw-xplore/FikaEngine/tree/main/editor/src">Editor Folder</a>
+        </li>
+        <li> Rendering: 
+          <a href="https://github.com/jw-xplore/FikaEngine/tree/main/engine/src/renderer">Renderer Folder</a>
+        </li>
+        <li> Input Manager:
+          <a href="https://github.com/jw-xplore/FikaEngine/tree/main/engine/src/platform/inputs">Input Folder</a>
+        </li>
+        </ul>
+
+        <br>
+        <h4>Core Structure</h4>
+        <br>
+
         <p>
+        The engine is unified under a single header called fika_engine.h. 
+        This header provides access points to all engine features and contains class Game, which takes care of running a game loop.
         </p>
+
+        <img src="../images/fika_gameloop.png" class="media-box">
+
+        <p>Fika Engine Base: 
+          <a href="https://github.com/jw-xplore/FikaEngine/blob/main/engine/src/fika_engine.h">fika_engine.h</a> &
+          <a href="https://github.com/jw-xplore/FikaEngine/blob/main/engine/src/fika_engine.cpp">fika_engine.cpp</a>
+        </p>
+        <br>
+
+        <p>
+        Every system is stored inside singleton class FikaServers. 
+        In this class users can access global systems like entity manager, renderer, physics and so on.
+        </p>
+
+        <img src="../images/fika_servers.png" class="media-box">
+
+        <p>Fika Engine Servers: 
+          <a href="https://github.com/jw-xplore/FikaEngine/blob/main/engine/src/core/fika_servers.h">fika_servers.h</a>
+        </p>
+
+        <br>
+        <h4>ECS Support</h4>
+        <br>
+
+        <p>
+          Most Fika base systems follow an ECS architecture. 
+          On top of that, users can also use ECS for custom components.
+        </p>
+
+        <p>
+          Fika ECS is composed of classes ECSManager, Entity, Component, ComponentUpdater. 
+          ECSManager stores all registered updators and runs them in the game loop. 
+          Updater holds a pool of same type components and runs updates on active components. 
+          Components, contrary to ECS standards, take care of both data and logic, but this is a personal preference rather than an enforced rule. 
+          Entities and components are tied together via ECSManager, which also serves as a place for adding entities and components to an entity.
+        </p>
+
+        <img src="../images/fika_ecsmanager.png" class="media-box">
+        <img src="../images/fika_ecsupdater.png" class="media-box">
+
+        <p>
+          This system was done better to tight together components of the same type and be able to link them to unique component id.
+          This allows the engine to save and recreate entities with specific components, which is for example used when loading levels defined inside the editor.
+        </p>
+
+        <img src="../images/fika_hpcomponent.png" class="media-box">
+
+        <p> Fika ECS Classes:
+          <a href="https://github.com/jw-xplore/FikaEngine/tree/main/engine/src/core/ecs">ECS Folder</a>
+        </p>
+        <br>
+
+        <p>
+          This unfortunately introduces a more extensive boiler plate for new components.
+          To improve this, there is bash script for creating a component and updater class base.
+          Into this base user only needs to fill data and logic and then call updater init to make components part of ECSManager.
+        </p>
+
+        <img src="../images/fika_ecsgen.png" class="media-box">
+        <p> ECS Generator:
+          <a href="https://github.com/jw-xplore/FikaEngine/blob/main/ecsgen.bat">Bash</a> &
+          <a href="https://github.com/jw-xplore/FikaEngine/tree/main/engine/templates">Template</a>
+        </p>
+
+        <br>
+        <h4>Planned Features</h4>
+        <br>
+
+        <ul>
+        <li>Vulkan based rendering</li>
+        <li>Playing and using audio files</li>
+        <li>Rework editor code and its UI/UX</li>
+        <li>Level files without redundant data and binary format option</li>
+        <li>Asynchronous data loading</li>
+        <li>Component variable editable inside editor</li>
+        <li>Levels manager</li>
+        <li>Input mapping</li>
+        <li>Creating game project in arbitrary location</li>
+        </ul>
+
     </div>
   </div>
   </main>
