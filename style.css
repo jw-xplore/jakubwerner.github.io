@@ -302,6 +302,7 @@ p {
     transition: 0.5s ease, transform 0.4s ease;
     overflow: visible;
     background: #1510235d;
+    text-decoration: none;
 }
 
 .button .linkIcon {
@@ -421,12 +422,8 @@ p {
     filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(0deg);
 }
 
-.details-title #ris-link {
-    color: #F4EDDC;
-}
-
-.details-title #bi-link {
-    color: #e2a750;
+.details-title a {
+    text-decoration: none;
 }
 
 .details-images
