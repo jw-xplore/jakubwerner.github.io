@@ -428,7 +428,7 @@ p {
 
 .details-images
 {
-    margin: 40px auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 16px;
